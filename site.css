@@ -1,0 +1,47 @@
+/**
+  Title: WEB 231 – My Portfolio Website
+  Author: Keith Hall
+  Date: 09/14/2021 
+  version: 2.0.0
+  Description: This is the css mark up for javascript project pages.
+*/
+body {
+  overflow-y: hidden; /* Removes scrolling */
+  box-sizing: border-box;
+}
+/* Main container */
+.container {
+  display: flex;  
+  align-items: center;      /* Centers all items in the div. */
+  justify-content: center;
+  height: 100vh;
+}
+/* Grid layout */
+.grid-container {   
+  display: grid;
+  gap: 40px 40px;  /* Spacing */
+  grid-template-columns: auto auto auto;
+}
+/* Card styling */
+.grid-item {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  padding: 30px;
+  text-align: center;
+}
+.grid-item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.grid-item a:hover {
+  text-decoration: none;
+}
+/* Card text  */
+.grid-item p {
+  margin-top: 3px; /* center h4 card text  */
+  font-size:12px;
+  font-family:'Poppins', Verdana, Arial, sans-serif;
+}
+/* H1 header  */
+.app-header {
+  margin-bottom: 40px;
+}
