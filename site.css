@@ -9,16 +9,40 @@ body {
   overflow-y: hidden; /* Removes scrolling */
   box-sizing: border-box;
 }
-/* Main container */
-.container {
-  display: flex;  
-  align-items: center;      /* Centers all items in the div. */
-  justify-content: center;
-  height: 100vh;
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  background:  #000435;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+ /* Navigation */
+nav .navbar{
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  /* background: red; */
+  padding: 0 50px;
+}
+.navbar .logo {
+    border: 3px solid white;
+    text-align: center;
+    font-size:24px;
+    font-family:Cambria, Cochin, serif
 }
 /* Grid layout */
-.grid-container {   
+.grid-container { 
+  margin:auto; 
   display: grid;
+  width: 35rem;
   gap: 40px 40px;  /* Spacing */
   grid-template-columns: auto auto auto;
 }
@@ -43,5 +67,7 @@ body {
 }
 /* H1 header  */
 .app-header {
-  margin-bottom: 40px;
+  margin-top: 9rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
